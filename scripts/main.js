@@ -1,0 +1,9 @@
+$('#bc').click(function(){
+    location.href='chemistry.html';
+})
+$('#bp').click(function(){
+    location.href='physics.html';
+})
+$('#bm').click(function(){
+    location.href='maths.html';
+})
