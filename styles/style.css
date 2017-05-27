@@ -1,0 +1,52 @@
+html {
+  font-size: 10px; /* px means 'pixels': the base font size is now 10 pixels high  */
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  font-size: 80px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 40px;
+}
+
+form {
+  display: table;
+  margin: 0 auto;
+}
+
+form div {
+  display: table-row;
+}
+
+th {
+  text-align: center;
+  font-size: 30px;
+}
+
+td {
+  text-align: center;
+  vertical-align: middle;
+  font-size: 30px;
+}
+
+button {
+    background-color: #BBBB; /* Gray */
+    border: none;
+    color: black;
+    padding: 14px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+
+}
+
+button:hover {
+    background-color: #8888; /* Gray */
+    color: black;
+}
