@@ -9,3 +9,11 @@ $('#bp1').click(function(){
 $('#bc1').click(function(){
     location.href='test_for_ions.html';
 })
+
+$('#bc2').click(function(){
+    location.href='ox_states_and_coloured_ions.html';
+})
+
+$('#bco1').click(function(){
+    location.href='chemistry.html';
+})
