@@ -19,7 +19,7 @@ var submit = document.getElementById('submit');
 var next = document.getElementById('next');
 var correct = document.getElementById('correct');
 var back = document.getElementById('back');
-var restart = document.getElementById('restart')
+var restart = document.getElementById('restart');
 var colour = "";
 var length = questions.length;
 var right = 0;
@@ -34,7 +34,7 @@ function submitFunction() {
   if (x.toLowerCase() === questions[number][1].toLowerCase()) {
     correct.innerHTML = "Correct";
     correct.style.color = "green";
-    right = right + 1
+    right = right + 1;
   } else {
     correct.innerHTML = "Incorrect. The answer is " + questions[number][1];
     correct.style.color = "red";
@@ -68,6 +68,7 @@ function backFunction() {
 }
 function restartFunction() {
   number = 0;
+  right = 0;
   next.style.display = "none";
   back.style.display = "none";
   restart.style.display = "none";
