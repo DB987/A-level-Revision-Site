@@ -31,9 +31,9 @@ question.innerHTML = questions[number][0];
 function submitFunction() {
   entercheck = 1;
   var x = textbox.value;
-  if (x === questions[number][1]) {
+  if (x.toLowerCase() === questions[number][1].toLowerCase()) {
     correct.innerHTML = "Correct";
-    correct.style.color = "green"
+    correct.style.color = "green";
     right = right + 1
   } else {
     correct.innerHTML = "Incorrect. The answer is " + questions[number][1];
