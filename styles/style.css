@@ -1,0 +1,31 @@
+html {
+  font-size: 10px; /* px means 'pixels': the base font size is now 10 pixels high  */
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  font-size: 80px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 40px;
+}
+
+button {
+    background-color: #BBBB; /* Gray */
+    border: none;
+    color: black;
+    padding: 14px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    border-radius: 8px;
+    width: 200px;
+}
+
+button:hover {
+    background-color: #8888; /* Gray */
+    color: black;
+}
