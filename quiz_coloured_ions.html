@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Quiz For Coloured Ions</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+  <body>
+    <div class="container-fluid">
+      <p id = "question"></p>
+      <div>
+        <input type="text" id="answer">
+      </div>
+      <div>
+        <button onclick="submitFunction()" id="submit" type = "button">Submit</button>
+      </div>
+      <p id="correct"></p>
+      <button onclick="nextFunction()" id="next" type = "button">Next</button>
+      <button onclick="backFunction()" id="back" type = "button">Back To Oxidation States and Coloured Ions</button>
+      <button onclick="restartFunction()" id="restart" type = "button">Restart</button>
+    </div>
+    <script src="scripts/quiz_colour_ions.js"></script>
+  </body>
+</html>
