@@ -29,3 +29,11 @@ $('#bcm1').click(function(){
 $('#bc3').click(function(){
     location.href='chemistry_mindmaps.html';
 })
+
+$('#bpm1').click(function(){
+    location.href='physics.html';
+})
+
+$('#bp1').click(function(){
+    location.href='physics_mindmaps.html';
+})
