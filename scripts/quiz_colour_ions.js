@@ -85,6 +85,7 @@ function backFunction() {
 function restartFunction() {
   number = 0;
   right = 0;
+  questions = shuffle(questions);
   next.style.display = "none";
   back.style.display = "none";
   restart.style.display = "none";
