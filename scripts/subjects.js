@@ -25,3 +25,7 @@ $('#bco2').click(function(){
 $('#bcm1').click(function(){
     location.href='chemistry.html';
 })
+
+$('#bc3').click(function(){
+    location.href='chemistry_mindmaps.html';
+})
