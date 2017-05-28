@@ -19,5 +19,5 @@ $('#bco1').click(function(){
 })
 
 $('#bco2').click(function(){
-    location.href='quiz_coloured_ions.html.html';
+    location.href='quiz_coloured_ions.html';
 })
