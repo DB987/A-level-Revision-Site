@@ -17,3 +17,7 @@ $('#bc2').click(function(){
 $('#bco1').click(function(){
     location.href='chemistry.html';
 })
+
+$('#bco2').click(function(){
+    location.href='quiz_coloured_ions.html.html';
+})
