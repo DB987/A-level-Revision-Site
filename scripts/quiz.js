@@ -1,3 +1,14 @@
+function shuffle(array) {
+  var currentIndex = array.length, temporaryValue, randomIndex;
+  while (0 !== currentIndex) {
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex -= 1;
+    temporaryValue = array[currentIndex];
+    array[currentIndex] = array[randomIndex];
+    array[randomIndex] = temporaryValue;
+  }
+  return array;
+}
 var questions = [
   ["What do you add to test for transition metals?", "NaOH"],
   ["What colour ppt will Cu <sup>2+</sup> form?", "blue"],
@@ -12,6 +23,7 @@ var questions = [
   ["What is a postive result for sulfates?", "white ppt"],
   ["What do you add to test for ammonium?", "add a few drops of sodium hydroxide and warm"],
 ];
+questions = shuffle(questions);
 var number = 0;
 var question = document.getElementById('question');
 var textbox = document.getElementById('answer');

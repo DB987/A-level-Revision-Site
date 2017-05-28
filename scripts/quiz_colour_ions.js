@@ -1,3 +1,14 @@
+function shuffle(array) {
+  var currentIndex = array.length, temporaryValue, randomIndex;
+  while (0 !== currentIndex) {
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex -= 1;
+    temporaryValue = array[currentIndex];
+    array[currentIndex] = array[randomIndex];
+    array[randomIndex] = temporaryValue;
+  }
+  return array;
+}
 var questions = [
   ["Ti<sup>2+</sup>", "violet"],
   ["Ti<sup>3+</sup>", "purple"],
@@ -16,6 +27,7 @@ var questions = [
   ["Ni<sup>2+</sup>", "green"],
   ["Cu<sup>2+</sup>", "pale blue"],
 ];
+questions = shuffle(questions);
 var number = 0;
 var question = document.getElementById('question');
 var textbox = document.getElementById('answer');
