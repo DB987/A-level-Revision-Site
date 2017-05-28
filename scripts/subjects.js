@@ -21,3 +21,7 @@ $('#bco1').click(function(){
 $('#bco2').click(function(){
     location.href='quiz_coloured_ions.html';
 })
+
+$('#bcm1').click(function(){
+    location.href='chemistry.html';
+})

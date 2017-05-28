@@ -10,6 +10,11 @@ h1 {
   margin-bottom: 20px
 }
 
+a {
+  display:block;
+  text-decoration: none;
+}
+
 form {
   display: table;
   margin: 0 auto;
@@ -36,4 +41,22 @@ form button {
 form button:hover {
     background-color: #8888; /* Gray */
     color: black;
+}
+
+button {
+  background-color: #BBBB; /* Gray */
+  border: none;
+  color: black;
+  padding: 30px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+button:hover {
+  background-color: #8888; /* Gray */
+  color: black;
 }
