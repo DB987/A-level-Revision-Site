@@ -18,7 +18,7 @@ var questions = [
   ["VO<sub>2</sub><sup>+</sup>", "yellow", "#ffff00"],
   ["Cr<sup>3+</sup>", "green", "#008000"],
   ["Cr<sub>2</sub>O<sub>7</sub><sup>2-</sup>", "orange", "#FFA500"],
-  ["Mn<sup>2+</sup", "very pale pink", "#ffb6c1"],
+  ["Mn<sup>2+</sup>", "very pale pink", "#ffb6c1"],
   ["MnO<sub>4</sub><sup>2-</sup>", "green", "#008000"],
   ["MnO<sub>4</sub><sup>-</sup>", "purple", "#800080"],
   ["Fe<sup>2+</sup>", "pale green", "#98FB98"],
@@ -40,6 +40,8 @@ var colour = "";
 var length = questions.length;
 var right = 0;
 var entercheck = 0;
+var wrong = [];
+var wrong_p = "";
 next.style.display = "none";
 back.style.display = "none";
 restart.style.display = "none";
@@ -54,6 +56,7 @@ function submitFunction() {
   } else {
     correct.innerHTML = "Incorrect. The answer is " + questions[number][1];
     correct.style.color = "red";
+    wrong.push(number);
   }
   question.style.setProperty('--element-color', questions[number][2]);
   submit.style.display = 'none';
@@ -63,14 +66,26 @@ function submitFunction() {
 function nextFunction() {
   entercheck = 0
   if (length === number) {
-    results = "Well done you have finished. You achieved " + right + "/" + length + ".";
-    question.style.display = "none";
+    var i = 0
+    var wrong_answers_text = "";
+    var wrong_length = wrong.length;
+    if (wrong_length === 0) {
+      wrong_p = "You got no questions wrong!";
+    } else{
+      for (i = 0; i < wrong_length; i++) {
+        wrong_answers_text += questions[wrong[i]][0] + ": " + questions[wrong[i]][1] + "<br>";
+      }
+      wrong_p = "The questions you got wrong:";
+    }
+    results = "Well done you have finished. You achieved " + right + "/" + length + ".<br>" + wrong_p;
     textbox.style.display = "none";
     submit.style.display = "none";
     next.style.display = "none";
     correct.style.color = "black";
     question.style.setProperty('--element-color', "black");
-    correct.innerHTML = results;
+    question.innerHTML = results;
+    correct.style.setProperty('--element-size', "30px");
+    correct.innerHTML = wrong_answers_text;
     back.style.display = "block";
     restart.style.display = "block";
   } else {
@@ -89,6 +104,7 @@ function restartFunction() {
   number = 0;
   right = 0;
   questions = shuffle(questions);
+  wrong = []
   textbox.value = "";
   next.style.display = "none";
   back.style.display = "none";
