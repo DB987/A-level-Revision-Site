@@ -11,7 +11,7 @@ function shuffle(array) {
 }
 var questions = [
   ["What do you add to test for transition metals?", "NaOH"],
-  ["What colour ppt will Cu <sup>2+</sup> form?", "blue"],
+  ["What colour ppt will Cu<sup>2+</sup> form?", "blue"],
   ["What colour ppt will Fe<sup>3+</sup> form?", "orange"],
   ["What colour ppt will Fe<sup>2+</sup> form?", "green"],
   ["What colour ppt will Cr<sup>3+</sup> form?", "grey-green"],
@@ -36,6 +36,8 @@ var colour = "";
 var length = questions.length;
 var right = 0;
 var entercheck = 0;
+var wrong = [];
+var wrong_p = "";
 next.style.display = "none";
 back.style.display = "none";
 restart.style.display = "none";
@@ -50,21 +52,34 @@ function submitFunction() {
   } else {
     correct.innerHTML = "Incorrect. The answer is " + questions[number][1];
     correct.style.color = "red";
+    wrong.push(number);
   }
   submit.style.display = 'none';
   next.style.display = "block";
   number = number + 1;
 }
 function nextFunction() {
-  entercheck = 0
+  entercheck = 0;
   if (length === number) {
-    results = "Well done you have finished. You achieved " + right + "/" + length + ".";
-    question.style.display = "none";
+    var i = 0;
+    var wrong_answers_text = "";
+    var wrong_length = wrong.length;
+    if (wrong_length === 0) {
+      wrong_p = "You got no questions wrong!";
+    } else{
+      for (i = 0; i < wrong_length; i++) {
+        wrong_answers_text += questions[wrong[i]][0] + ": " + questions[wrong[i]][1] + "<br>";
+      }
+      wrong_p = "The questions you got wrong:";
+    }
+    results = "Well done you have finished. You achieved " + right + "/" + length + ".<br>" + wrong_p;
     textbox.style.display = "none";
     submit.style.display = "none";
     next.style.display = "none";
     correct.style.color = "black";
-    correct.innerHTML = results;
+    correct.style.setProperty('--element-size', "30px");
+    question.innerHTML = results;
+    correct.innerHTML = wrong_answers_text;
     back.style.display = "block";
     restart.style.display = "block";
   } else {
@@ -82,7 +97,9 @@ function restartFunction() {
   number = 0;
   right = 0;
   questions = shuffle(questions);
+  wrong = [];
   textbox.value = "";
+  correct.style.setProperty('--element-size', "40px");
   next.style.display = "none";
   back.style.display = "none";
   restart.style.display = "none";

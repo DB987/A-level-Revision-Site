@@ -64,9 +64,9 @@ function submitFunction() {
   number = number + 1;
 }
 function nextFunction() {
-  entercheck = 0
+  entercheck = 0;
   if (length === number) {
-    var i = 0
+    var i = 0;
     var wrong_answers_text = "";
     var wrong_length = wrong.length;
     if (wrong_length === 0) {
@@ -105,6 +105,7 @@ function restartFunction() {
   right = 0;
   questions = shuffle(questions);
   wrong = []
+  correct.style.setProperty('--element-size', "40px");
   textbox.value = "";
   next.style.display = "none";
   back.style.display = "none";
