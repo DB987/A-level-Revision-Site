@@ -10,22 +10,22 @@ function shuffle(array) {
   return array;
 }
 var questions = [
-  ["Ti<sup>2+</sup>", "violet"],
-  ["Ti<sup>3+</sup>", "purple"],
-  ["V<sup>2+</sup>", "violet"],
-  ["V<sup>3+</sup>", "green"],
-  ["VO<sup>2+</sup>", "blue"],
-  ["VO<sub>2</sub><sup>+</sup>", "yellow"],
-  ["Cr<sup>3+</sup>", "green"],
-  ["Cr<sub>2</sub>O<sub>7</sub><sup>2-</sup>", "orange"],
-  ["Mn<sup>2+</sup", "very pale pink"],
-  ["MnO<sub>4</sub><sup>2-</sup>", "green"],
-  ["MnO<sub>4</sub><sup>-</sup>", "purple"],
-  ["Fe<sup>2+</sup>", "pale green"],
-  ["Fe<sup>3+</sup>", "yellow"],
-  ["Co<sup>2+</sup>", "pink"],
-  ["Ni<sup>2+</sup>", "green"],
-  ["Cu<sup>2+</sup>", "pale blue"],
+  ["Ti<sup>2+</sup>", "violet", "#EE82EE"],
+  ["Ti<sup>3+</sup>", "purple", "#800080"],
+  ["V<sup>2+</sup>", "violet", "#EE82EE"],
+  ["V<sup>3+</sup>", "green","#008000"],
+  ["VO<sup>2+</sup>", "blue", "#0000ff"],
+  ["VO<sub>2</sub><sup>+</sup>", "yellow", "#ffff00"],
+  ["Cr<sup>3+</sup>", "green", "#008000"],
+  ["Cr<sub>2</sub>O<sub>7</sub><sup>2-</sup>", "orange", "#FFA500"],
+  ["Mn<sup>2+</sup", "very pale pink", "#ffb6c1"],
+  ["MnO<sub>4</sub><sup>2-</sup>", "green", "#008000"],
+  ["MnO<sub>4</sub><sup>-</sup>", "purple", "#800080"],
+  ["Fe<sup>2+</sup>", "pale green", "#98FB98"],
+  ["Fe<sup>3+</sup>", "yellow", "#ffff00"],
+  ["Co<sup>2+</sup>", "pink", "#FFC0CB"],
+  ["Ni<sup>2+</sup>", "green", "#008000"],
+  ["Cu<sup>2+</sup>", "pale blue", "#ADD8E6"],
 ];
 questions = shuffle(questions);
 var number = 0;
@@ -55,6 +55,7 @@ function submitFunction() {
     correct.innerHTML = "Incorrect. The answer is " + questions[number][1];
     correct.style.color = "red";
   }
+  question.style.setProperty('--element-color', questions[number][2]);
   submit.style.display = 'none';
   next.style.display = "block";
   number = number + 1;
@@ -68,6 +69,7 @@ function nextFunction() {
     submit.style.display = "none";
     next.style.display = "none";
     correct.style.color = "black";
+    question.style.setProperty('--element-color', "black");
     correct.innerHTML = results;
     back.style.display = "block";
     restart.style.display = "block";
@@ -77,6 +79,7 @@ function nextFunction() {
     correct.innerHTML = "";
     submit.style.display = "block";
     next.style.display = "none";
+    question.style.setProperty('--element-color', "black");
   }
 }
 function backFunction() {
