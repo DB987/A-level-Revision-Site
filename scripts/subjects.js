@@ -37,3 +37,7 @@ $('#bpm1').click(function(){
 $('#bp1').click(function(){
     location.href='physics_mindmaps.html';
 })
+
+$('#bp2').click(function(){
+    location.href='particle_interactions.html';
+})

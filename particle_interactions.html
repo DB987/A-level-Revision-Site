@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Physics</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="styles/style_quiz_pi.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+  <body>
+    <div class="container-fluid">
+      <h3 id = "question"></h3>
+      <table>
+        <tr>
+          <td><input type="text" id="r1c1"></td>
+          <td rowspan="3"><img alt="Test Image" id="r1c2" src;="" /></td>
+          <td><input input type="text" id="r1c3"></td>
+        </tr>
+        <tr>
+          <td><input input type="text" id="r2c1"></td>
+          <td><input input type="text" id="r2c3"></td>
+        </tr>
+        <tr>
+          <td><input input type="text" id="r3c1"></td>
+          <td><input input type="text" id="r3c3"></td>
+        </tr>
+      </table>
+      <p id="correct"></p>
+      <button onclick="submit()" type="button" id="bs">Submit</button>
+      <button onclick="next()" type="button" id="bn">Next</button>
+      <button onclick="restart()" type="button" id="br">Restart</button>
+      <button onclick="back()" type="button" id="bb">Back</button>
+    </div>
+    <script src="scripts\particle_interactions_quiz.js"></script>
+  </body>
+</html>
