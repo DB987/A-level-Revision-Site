@@ -139,7 +139,7 @@ function end(){
   button_rest.style.display = "block";
   button_back.style.display = "block";
   correct_p.style.color = "black";
-  correct_p.innerHTML = "Well done you have finished you achieved " + number_correct + "/" + array_questions.length;
+  correct_p.innerHTML = "Well done you have finished.<br>You achieved: " + number_correct + "/" + array_questions.length;
 }
 
 function submit(){
