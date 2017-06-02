@@ -41,3 +41,11 @@ $('#bp1').click(function(){
 $('#bp2').click(function(){
     location.href='particle_interactions.html';
 })
+
+$('#bm1').click(function(){
+    location.href='inverse_trig_func.html';
+})
+
+$('#bm2').click(function(){
+    location.href='suvat.html';
+})
