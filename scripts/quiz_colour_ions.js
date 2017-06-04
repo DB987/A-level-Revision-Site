@@ -77,7 +77,7 @@ function nextFunction() {
       }
       wrong_p = "The questions you got wrong:";
     }
-    results = "Well done you have finished. You achieved " + right + "/" + length + ".<br>" + wrong_p;
+    results = "Well done you have finished.<br>You achieved " + right + "/" + length + ".<br>" + wrong_p;
     textbox.style.display = "none";
     submit.style.display = "none";
     next.style.display = "none";
