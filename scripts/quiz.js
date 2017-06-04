@@ -21,7 +21,7 @@ var questions = [
   ["What is a postive result for carbonates?", "effervescence and limewater turning cloudy"],
   ["What do you add to test for sulfates?", "dilute strong acid then a few drops of barium nitrate solution"],
   ["What is a postive result for sulfates?", "white ppt"],
-  ["What do you add to test for ammonium?", "add a few drops of sodium hydroxide and warm"],
+  ["What do you add to test for ammonium?", "add a few drops of NaOH and warm"],
 ];
 questions = shuffle(questions);
 var number = 0;
