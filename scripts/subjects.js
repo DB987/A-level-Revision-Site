@@ -49,3 +49,7 @@ $('#bm1').click(function(){
 $('#bm2').click(function(){
     location.href='suvat.html';
 })
+
+$('#bm3').click(function(){
+    location.href='trig_equ.html';
+})
