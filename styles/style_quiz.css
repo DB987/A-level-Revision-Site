@@ -16,6 +16,12 @@ input[type="text"]{
   color: black;
 }
 
+h1 {
+  color: black;
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
 p {
   font-size: var(--element-size);
   margin-bottom: 10px;

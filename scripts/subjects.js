@@ -30,6 +30,10 @@ $('#bc3').click(function(){
     location.href='chemistry_mindmaps.html';
 })
 
+$('#bc4').click(function(){
+    location.href='Precipitation_Reactions.html';
+})
+
 $('#bpm1').click(function(){
     location.href='physics.html';
 })
