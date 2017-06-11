@@ -30,6 +30,8 @@ var array_definitions = [
   ["Partial pressures", "each individual gas exerts its own pressure"],
   ["Mole fraction", "proportion of gas mixture that is made up of a particular gas"],
   ["Reaction rate", "is the change in the amount of reactants or products per unit time"],
+  ["Relative atomic mass", "is the weighted mean mass of an atom of an element, compared to 1/12 of the mass of carbon-12"],
+  ["Relative isotopic mass", "is the mass of an atom of an isotope of an element compared to 1/12 of the mass of an atom of carbon-12"],
 ];
 
 var word = document.getElementById('word');
