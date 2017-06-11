@@ -2,10 +2,6 @@ $('#b1').click(function(){
     location.href='index.html';
 })
 
-$('#bp1').click(function(){
-    location.href='interactions.html';
-})
-
 $('#bc1').click(function(){
     location.href='test_for_ions.html';
 })
@@ -34,6 +30,10 @@ $('#bc4').click(function(){
     location.href='Precipitation_Reactions.html';
 })
 
+$('#bc5').click(function(){
+    location.href='definitions_chemistry_paper_1.html';
+})
+
 $('#bpm1').click(function(){
     location.href='physics.html';
 })
@@ -44,6 +44,10 @@ $('#bp1').click(function(){
 
 $('#bp2').click(function(){
     location.href='particle_interactions.html';
+})
+
+$('#bp3').click(function(){
+    location.href='definitions_physics_paper_1.html';
 })
 
 $('#bm1').click(function(){
