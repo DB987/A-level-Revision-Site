@@ -39,6 +39,8 @@ var definition = document.getElementById('definition');
 var next_button = document.getElementById('next');
 var back_button = document.getElementById('back');
 var restart_button = document.getElementById('restart');
+var show_button = document.getElementById('show');
+var hide_button = document.getElementById('hide');
 var number = 0;
 
 function endFunction(){
@@ -46,11 +48,26 @@ function endFunction(){
   definition.innerHTML = "";
   next_button.style.display = "none";
   back_button.style.display = "block";
-  restart.style.display = "block";
+  restart_button.style.display = "block";
+  hide_button.style.display = "none";
 }
 
 function backFunction() {
   location.href='chemistry.html';
+}
+
+function showFunction(){
+  definition.innerHTML = array_definitions[number][1];
+  next_button.style.display = "block";
+  hide_button.style.display = "block";
+  show_button.style.display = "none";
+}
+
+function hideFunction(){
+  definition.innerHTML = "";
+  hide_button.style.display = "none";
+  next_button.style.display = "none";
+  show_button.style.display = "block";
 }
 
 function nextFunction() {
@@ -71,6 +88,7 @@ function restartFunction() {
   next_button.style.display = "block";
   word.innerHTML = array_definitions[number][0];
   definition.innerHTML = array_definitions[number][1];
+  hide_button.style.display = "none";
 }
 
 shuffle(array_definitions);
@@ -78,3 +96,4 @@ word.innerHTML = array_definitions[number][0];
 definition.innerHTML = array_definitions[number][1];
 back_button.style.display = "none";
 restart_button.style.display = "none";
+show_button.style.display = "none";

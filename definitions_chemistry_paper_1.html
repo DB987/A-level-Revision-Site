@@ -13,7 +13,17 @@
     <div class="container-fluid">
       <h1 id="word"></h1>
       <p id = "definition"></p>
-      <button onclick="nextFunction()" id="next" type = "button">Next</button>
+      <button onclick="showFunction()" id="show" type = "button">Show</button>
+      <table>
+        <tr>
+          <td>
+            <button onclick="hideFunction()" id="hide" type = "button">Hide</button>
+          </td>
+          <td>
+            <button onclick="nextFunction()" id="next" type = "button">Next</button>
+          </td>
+        </tr>
+      </table>
       <button onclick="backFunction()" id="back" type = "button">Back To Chemistry</button>
       <button onclick="restartFunction()" id="restart" type = "button">Restart</button>
     </div>
