@@ -88,7 +88,7 @@ function restartFunction() {
   next_button.style.display = "block";
   word.innerHTML = array_definitions[number][0];
   definition.innerHTML = array_definitions[number][1];
-  hide_button.style.display = "none";
+  hide_button.style.display = "block";
 }
 
 shuffle(array_definitions);
