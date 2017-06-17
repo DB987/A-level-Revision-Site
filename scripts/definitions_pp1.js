@@ -63,7 +63,7 @@ function endFunction(){
 }
 
 function backFunction() {
-  location.href='chemistry.html';
+  location.href='physics.html';
 }
 
 function showFunction(){
