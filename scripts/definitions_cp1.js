@@ -53,7 +53,7 @@ function endFunction(){
 }
 
 function backFunction() {
-  location.href='chemistry.html';
+  location.href='definitions_chemistry.html';
 }
 
 function showFunction(){

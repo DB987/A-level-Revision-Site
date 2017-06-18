@@ -61,7 +61,7 @@ function endFunction(){
 }
 
 function backFunction() {
-  location.href='physics.html';
+  location.href='definitions_physics.html';
 }
 
 function showFunction(){

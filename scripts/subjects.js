@@ -31,7 +31,7 @@ $('#bc4').click(function(){
 })
 
 $('#bc5').click(function(){
-    location.href='definitions_chemistry_paper_1.html';
+    location.href='definitions_chemistry.html';
 })
 
 $('#bpm1').click(function(){
@@ -47,7 +47,7 @@ $('#bp2').click(function(){
 })
 
 $('#bp3').click(function(){
-    location.href='definitions_physics_paper_1.html';
+    location.href='definitions_physics.html';
 })
 
 $('#bm1').click(function(){
