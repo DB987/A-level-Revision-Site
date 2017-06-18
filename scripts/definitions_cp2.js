@@ -37,6 +37,13 @@ var array_definitions = [
   ["Alicyclic Compounds", " Contains a non-aromatic ring."],
   ["Alkyl Groups", "A branched hydrocarbon chain."],
   ["Homologous Series", "A family of organic compounds that have the same general formula and similar chemical properties."],
+  ["Water of crystallisation", "water in a lattice"],
+  ["Ionic bond", "is an electrostatic attraction between two oppositely charge ions"],
+  ["Covalent bond", "is the strong electrostatic attraction between a shared pair of electrons and nuclei of the bonded atoms"],
+  ["First ionisation energy", "is the energy needed to remove 1 mole of electrons from 1 mole of gaseous atoms"],
+  ["Disproportionation", "is when a single element is simultaneously oxidised and reduced"],
+  ["Relative atomic mass", "is the weighted mean mass of an atom of an element, compared to 1/12 of the mass of carbon-12"],
+  ["Relative isotopic mass", "is the mass of an atom of an isotope of an element compared to 1/12 of the mass of an atom of carbon-12"],
 ];
 
 var word = document.getElementById('word');
